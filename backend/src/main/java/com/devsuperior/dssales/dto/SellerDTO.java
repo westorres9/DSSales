@@ -3,14 +3,21 @@ package com.devsuperior.dssales.dto;
 import com.devsuperior.dssales.entities.Seller;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 public class SellerDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
+
+    @NotBlank(message = "Campo requerido")
     public String name;
+    @Email(message = "Email inválido")
     public String email;
+    @NotNull(message = "Campo requerido")
     public TeamDTO team;
 
     public SellerDTO() {
