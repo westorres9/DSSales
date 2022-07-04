@@ -2,8 +2,6 @@ package com.devsuperior.dssales.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -16,7 +14,7 @@ public class Team implements Serializable {
     private Long id;
     private String name;
 
-    public Team(){
+    public Team(Long id){
     }
 
     public Long getId() {
