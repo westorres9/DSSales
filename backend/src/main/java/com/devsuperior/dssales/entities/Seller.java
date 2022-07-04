@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "tb_seller")
-public class Sellers implements Serializable {
+public class Seller implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -19,7 +19,7 @@ public class Sellers implements Serializable {
     @JoinColumn(name = "team_id")
     public Team team;
 
-    public Sellers() {
+    public Seller() {
     }
 
     public Long getId() {
@@ -58,7 +58,7 @@ public class Sellers implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Sellers sellers = (Sellers) o;
+        Seller sellers = (Seller) o;
         return Objects.equals(id, sellers.id);
     }
 
