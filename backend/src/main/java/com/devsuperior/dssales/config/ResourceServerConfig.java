@@ -31,7 +31,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     private static final String[] PUBLIC = { "/oauth/token", "/h2-console/**" };
 
-    private static final String[] OPERATOR_GET = { "/departments/**", "/employees/**" };
+    private static final String[] OPERATOR_GET = { "/teams/**", "/sales/**" };
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
