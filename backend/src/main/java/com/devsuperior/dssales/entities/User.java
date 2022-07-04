@@ -1,4 +1,4 @@
-package com.devsuperior.dssales;
+package com.devsuperior.dssales.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
